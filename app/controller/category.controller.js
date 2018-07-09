@@ -17,7 +17,7 @@ exports.create = (req, res) => {
 exports.findAll = (req, res) => {
     Category.findAll({
         order: [
-            ['createdAt', 'DESC']
+            ['id', 'DESC']
         ]
     }).then(categories => {
         // Send all categories to Client
